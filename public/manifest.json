@@ -1,0 +1,19 @@
+{
+  "name": "chrome-extension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "This is a chrome extension",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "192": "icon-192x192.png",
+      "256": "icon-256x256.png",
+      "384": "icon-384x384.png",
+      "512": "icon-512x512.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["activeTab", "storage"]
+}
